@@ -329,6 +329,28 @@ section {
   justify-content: space-around;
 }
 
+.service-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1 fr 1fr;
+}
+
+.service-grid-item {
+  padding: 1em;
+  background-color: orange;
+  border: solid;
+  color: black;
+}
+
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+
+
 /* media query for smaller desktop screens and smaller */
 @media screen and (max-width: 980px) {
   header {
